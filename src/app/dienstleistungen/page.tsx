@@ -37,7 +37,7 @@ export default function Dienstleistungen() {
             icon={<Wrench size={48} className="text-swiss-red" />}
             features={["Wasserschadensanierung", "Fassadenreparaturen", "Maler- und Gipserarbeiten", "Bodenbelagsreparaturen"]}
             reverse={false}
-            imageSrc="/renovation.png"
+            image="/renovation.png"
           />
 
           {/* Decoration */}
@@ -48,7 +48,7 @@ export default function Dienstleistungen() {
             icon={<PaintBucket size={48} className="text-swiss-red" />}
             features={["Farbkonzepte & Beratung", "Trockenbau & Raumteiler", "Hochwertige Wandverkleidungen", "Lichtdesign-Integration"]}
             reverse={true}
-            imageSrc="/decoration.png"
+            image="/decoration.png"
           />
 
           {/* Baustelle */}
@@ -58,6 +58,7 @@ export default function Dienstleistungen() {
             description="Als erfahrener Partner übernehmen wir das komplette Baustellenmanagement. Wir koordinieren alle Gewerke, überwachen den Baufortschritt und stellen sicher, dass Ihr Projekt termingerecht und im Budgetrahmen abgeschlossen wird."
             icon={<HardHat size={48} className="text-swiss-red" />}
             features={["Bauleitung & Koordination", "Qualitätskontrolle", "Termin- und Kostenüberwachung", "Sicherheitsmanagement"]}
+            image="/hero.png"
           />
         </div>
       </section>
