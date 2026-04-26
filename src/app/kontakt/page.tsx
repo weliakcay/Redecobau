@@ -178,10 +178,17 @@ export default function Kontakt() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="aspect-[16/9] bg-swiss-gray rounded-sm flex items-center justify-center text-white/20 font-bold text-2xl relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-gray-800 to-gray-900" />
-              <span className="relative z-10 flex items-center gap-2"><MapPin /> Zürich / Meilen Map</span>
+            {/* Map */}
+            <div className="aspect-[16/9] bg-swiss-gray rounded-sm overflow-hidden shadow-inner border border-gray-100">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                src="https://maps.google.com/maps?q=Ländischstrasse%20135,%208706%20Meilen,%20Schweiz&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </motion.div>
         </div>
