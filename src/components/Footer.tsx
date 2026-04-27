@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Hammer, Mail, MapPin } from "lucide-react";
+import { Hammer, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -39,20 +39,19 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-swiss-red shrink-0" />
-              <div>
-                <a href="mailto:info@redecobau.ch" className="hover:text-white transition-colors block">info@redecobau.ch</a>
-                <a href="mailto:serkan-nurhak@hotmail.com" className="hover:text-white transition-colors block">serkan-nurhak@hotmail.com</a>
-              </div>
+              <a href="mailto:info@redecobau.ch" className="hover:text-white transition-colors">info@redecobau.ch</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Phone size={18} className="text-swiss-red shrink-0" />
+              <a href="tel:+41765054057" className="hover:text-white transition-colors">+41 76 505 40 57</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
-        <p>&copy; {new Date().getFullYear()} Redecobau (Ncom GmbH). Alle Rechte vorbehalten.</p>
-        <div className="flex gap-6 mt-4 md:mt-0">
-          <Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link>
-          <Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
+        <p>Product by Ncom GmbH</p>
+        <span className="hidden md:inline text-gray-600">·</span>
+        <a href="mailto:info@redecobau.ch" className="hover:text-white transition-colors">info@redecobau.ch</a>
       </div>
     </footer>
   );

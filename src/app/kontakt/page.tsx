@@ -162,7 +162,6 @@ export default function Kontakt() {
                   <div>
                     <h3 className="font-bold text-swiss-dark text-lg mb-1">E-Mail</h3>
                     <p><a href="mailto:info@redecobau.ch" className="hover:text-swiss-red transition-colors">info@redecobau.ch</a></p>
-                    <p><a href="mailto:serkan-nurhak@hotmail.com" className="hover:text-swiss-red transition-colors">serkan-nurhak@hotmail.com</a></p>
                   </div>
                 </div>
 
@@ -172,7 +171,7 @@ export default function Kontakt() {
                   </div>
                   <div>
                     <h3 className="font-bold text-swiss-dark text-lg mb-1">Telefon</h3>
-                    <p className="text-sm">Auf Anfrage</p>
+                    <p><a href="tel:+41765054057" className="hover:text-swiss-red transition-colors">+41 76 505 40 57</a></p>
                   </div>
                 </div>
               </div>
